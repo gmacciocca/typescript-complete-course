@@ -3,8 +3,8 @@ let myName = "Gianluca";
 // ERROR -> myName = 2;
 
 // number
-let thisYear = 2017;
-// ERROR -> thisYear = "This year";
+let myAge = 99;
+// ERROR -> myAge = "My Age";
 
 // boolean
 let hasHobbies = true;
@@ -35,9 +35,36 @@ let myColor: Color;
 myColor = Color.Blue;
 console.log(myColor);
 
+//any
+let car: any = "BMW";
+console.log(car);
+car = { brand: "BMW", series: 3};
+console.log(car);
 
 
+// fuctions
+function returnMyName(): string {
+    return myName;
+    // ERROR -> return myAge;
+}
+console.log(returnMyName());
 
+// void
+function sayHello(): void {
+    console.log("Hello!");
+    // ERROR -> return myName;
+}
 
+// argument types
+function multiply(value1: number, value2: number): number {
+    return value1 * value2;
+}
+console.log(multiply(2, 3));
 
+// functions types
+var myMultiply: (val1: number, val2: number) => number;
+// ERROR -> myMultiply = sayHello;
+// ERROR -> myMultiply();
+myMultiply = multiply;
+console.log(myMultiply(4, 5));
 
