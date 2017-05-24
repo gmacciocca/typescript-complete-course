@@ -68,3 +68,35 @@ var myMultiply: (val1: number, val2: number) => number;
 myMultiply = multiply;
 console.log(myMultiply(4, 5));
 
+// Objects
+let userData: { name: string, age: number } = {
+    name: "Gianluca",
+    age: 99
+};
+// ERROR -> userData = {};
+// ERROR -> 
+//  userData = {
+//     a: "Hello",
+//     b: 1
+// };
+
+
+// Type alias
+type Complex = { data: number[], output: (all: boolean) => number[]};
+let complex: Complex = { 
+    data: [1, 2, 3], 
+    output: function (all: boolean): number[] { return this.data; }
+};
+
+console.log(complex.output(true));
+
+// Union types
+let myRealRealAge: number | string = 99;
+myRealRealAge = "ninetynine";
+// ERROR -> myRealRealAge = true;
+
+
+
+
+
+
