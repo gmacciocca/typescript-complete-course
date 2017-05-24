@@ -95,8 +95,25 @@ let myRealRealAge: number | string = 99;
 myRealRealAge = "ninetynine";
 // ERROR -> myRealRealAge = true;
 
+// Check types
+let finalValue = 33;
+if (typeof finalValue === "number") {
+    console.log("Is a number");
+}
 
+// never type
+function neverReturns(): never {
+    throw new Error("ERROR!");
+};
 
+// nullable type ("strictNullChecks": true  in tsconfig.json)
+let canBeNull : number | null = 12;
+canBeNull = null;
+let canAlsoBeNull;
+canAlsoBeNull = null;
+let canAlsoBeAny;
+canAlsoBeAny = 12;
+canAlsoBeAny = "111";
 
 
 
