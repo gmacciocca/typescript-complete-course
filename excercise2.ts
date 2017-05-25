@@ -29,4 +29,4 @@ var scientist = {firstName: "Will", experience: 12};
 // var firstName = scientist.firstName;
 // var experience = scientist.experience;
 //console.log(firstName, experience);
-console.log(...scientist);
+console.log(scientist);

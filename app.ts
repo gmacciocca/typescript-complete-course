@@ -85,7 +85,7 @@ let userData: { name: string, age: number } = {
 type Complex = { data: number[], output: (all: boolean) => number[]};
 let complex: Complex = { 
     data: [1, 2, 3], 
-    output: function (all: boolean): number[] { return this.data; }
+    output: function (): number[] { return this.data; }
 };
 
 console.log(complex.output(true));
