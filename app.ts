@@ -115,5 +115,10 @@ let canAlsoBeAny;
 canAlsoBeAny = 12;
 canAlsoBeAny = "111";
 
+// MODULES
+import * as CIRCLE from "./math/circle";
+import calcRect from "./math/rectangle";
 
-
+console.log("PI2", CIRCLE.PI2);
+console.log("calculateCircumference(10) = ", CIRCLE.calculateCircumference(10));
+console.log("calculateRectangle(4, 5) = ", calcRect(4, 5));
