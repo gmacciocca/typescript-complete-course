@@ -53,7 +53,7 @@ function makeMethodPropertyOverwritable(value: boolean) {
     }
 }
 
-function makePropertyOverwritable(value: boolean) {
+function makePropertyOverwritable(value: boolean) : Function {
     //  "target" differ if the method is static or from an instanciated class 
     //      - if static this would be the Class contructor fuction
     //      - if instanciated then it's the prototype of the Class

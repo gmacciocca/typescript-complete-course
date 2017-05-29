@@ -5,15 +5,22 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lite-server"
+    "start": "lite-server",
+    "build-with-gulp": "gulp"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jquery": "^2.0.45",
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^3.1.7",
     "lite-server": "^2.3.0",
-    "typescript": "^2.3.3"
+    "ts-loader": "^2.1.0",
+    "typescript": "^2.3.3",
+    "webpack": "^2.6.1"
   },
   "dependencies": {
+    "jquery": "^3.2.1",
     "systemjs": "^0.20.12"
   }
 }
