@@ -6,9 +6,13 @@
     <title>TypeScript</title>
 <head>
 <body>
+    
 <div id="app">Change it with JQUERY</div>
-<script src="node_modules/systemjs/dist/system.js"></script>
 
+<script src="build/bundle.js"></script>
+
+<!-- WEBPACK does not need "SystemJS"
+<script src="node_modules/systemjs/dist/system.js"></script>
 <script>
     SystemJS.config({ 
         map : {
@@ -23,6 +27,7 @@
     });
     SystemJS.import("build/thirdPArtyLibsWithTypesrtipt.js");
 </script>
+-->
 
 </body>
 </html>

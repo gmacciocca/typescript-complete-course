@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "lite-server",
-    "build-with-gulp": "gulp"
+    "build-with-gulp": "gulp",
+    "build-with-webpack": "webpack -d --watch",
+    "build-with-webpack:prod": "webpack -p"
   },
   "author": "",
   "license": "ISC",
